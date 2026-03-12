@@ -1,6 +1,6 @@
 # 🚀 Recast Designs Test
 
-Welcome to the **`recast_designs_test`** project! 🎉 
+Welcome to the **`recast_designs_test`** Task! 🎉 
 
 This application uses a modern, scalable Flutter architecture designed for multi-platform support, beautiful micro-animations, and clean separation of concerns.
 
@@ -23,7 +23,7 @@ This application uses a modern, scalable Flutter architecture designed for multi
 ---
 
 ## 🏗️ Architecture: Feature-First
-We strictly use **Feature-First Clean Architecture**. 
+I strictly use **Feature-First Clean Architecture**. 
 
 Files are grouped by feature (e.g., `auth`), separating the UI from the business logic.
 
@@ -44,7 +44,7 @@ lib/
 ---
 
 ## 🧠 State Management: Cubit
-We use `flutter_bloc` (**Cubit**) to eliminate unnecessary `setState` calls, keeping the UI lightning-fast. 
+I use `flutter_bloc` (**Cubit**) to eliminate unnecessary `setState` calls, keeping the UI lightning-fast. 
 
 The **Auth Feature** relies on three core states:
 - `SocialAuthForm`: Displays OAuth login buttons.
