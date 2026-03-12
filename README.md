@@ -10,9 +10,13 @@ This application uses a modern, scalable Flutter architecture designed for multi
 
 <br>
 <p align="center">
-  <img src="assets/screenshots/signup_form.jpg" width="30%" alt="Sign Up Form">
-  <img src="assets/screenshots/validation_error.jpg" width="30%" alt="Validation Error">
+
   <img src="assets/screenshots/social_auth.jpg" width="30%" alt="Social Auth Form">
+  
+  <img src="assets/screenshots/signup_form.jpg" width="30%" alt="Sign Up Form">
+  
+  <img src="assets/screenshots/validation_error.jpg" width="30%" alt="Validation Error">
+  
 </p>
 <br>
 
