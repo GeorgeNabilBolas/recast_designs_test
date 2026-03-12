@@ -6,6 +6,14 @@ This application uses a modern, scalable Flutter architecture designed for multi
 
 ---
 
+## 📦 Download APK
+
+⬇️ **Latest Release**
+
+[Download App (v1)](https://github.com/GeorgeNabilBolas/recast_designs_test/releases/download/v1/app-arm64-v8a-release.apk)
+
+---
+
 ## 📸 App Screenshots
 
 <br>
