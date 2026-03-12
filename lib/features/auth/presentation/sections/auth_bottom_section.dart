@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:recast_designs_test/core/constants/app_strings.dart';
-import 'package:recast_designs_test/core/constants/app_colors.dart';
-import 'package:recast_designs_test/core/constants/app_text_styles.dart';
+import 'package:recast_designs_test/core/theme/app_colors.dart';
+import 'package:recast_designs_test/core/theme/app_text_styles.dart';
+import 'package:recast_designs_test/core/constants/app_dimensions.dart';
 import 'package:recast_designs_test/core/utils/helpers/app_snackbar.dart';
 import 'package:recast_designs_test/core/utils/widgets/gradient_text.dart';
 
@@ -18,10 +19,8 @@ class AuthBottomSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedCrossFade(
-      duration: const Duration(milliseconds: 300),
-      crossFadeState: !isSocialAuth
-          ? CrossFadeState.showSecond
-          : CrossFadeState.showFirst,
+      duration: const Duration(milliseconds: AppDimensions.animationFast),
+      crossFadeState: !isSocialAuth ? CrossFadeState.showSecond : CrossFadeState.showFirst,
       firstChild: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

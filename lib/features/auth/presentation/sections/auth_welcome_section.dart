@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:recast_designs_test/core/constants/app_strings.dart';
-import 'package:recast_designs_test/core/constants/app_colors.dart';
-import 'package:recast_designs_test/core/constants/app_text_styles.dart';
+import 'package:recast_designs_test/core/theme/app_colors.dart';
+import 'package:recast_designs_test/core/theme/app_text_styles.dart';
+import 'package:recast_designs_test/core/constants/app_dimensions.dart';
 import 'package:recast_designs_test/core/utils/responsive/responsive.dart';
 import 'package:recast_designs_test/core/utils/widgets/gradient_text.dart';
 
@@ -18,7 +19,7 @@ class AuthWelcomeSection extends StatelessWidget {
           style: AppTextStyles.style24W700Gold,
           textAlign: TextAlign.center,
         ),
-        SizedBox(height: context.h(6)),
+        SizedBox(height: context.h(AppDimensions.spacingSm)),
         Text(
           AppStrings.welcomeSubtitle,
           style: AppTextStyles.style12W400White60,

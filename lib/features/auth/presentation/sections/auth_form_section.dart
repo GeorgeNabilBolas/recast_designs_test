@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recast_designs_test/core/constants/app_strings.dart';
 import 'package:recast_designs_test/core/utils/responsive/responsive.dart';
+import 'package:recast_designs_test/core/constants/app_dimensions.dart';
 
 import '../widgets/sign_up_form.dart';
 import '../widgets/social_auth_form.dart';
@@ -18,9 +19,9 @@ class AuthFormSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: context.h(155),
+      height: context.h(AppDimensions.authFormHeight),
       child: AnimatedSwitcher(
-        duration: const Duration(milliseconds: 800),
+        duration: const Duration(milliseconds: AppDimensions.animationSlow),
         switchInCurve: Curves.easeOutBack,
         switchOutCurve: Curves.easeInCubic,
         transitionBuilder: (child, animation) {

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:recast_designs_test/core/utils/helpers/validation_helper.dart';
 import 'package:recast_designs_test/core/utils/responsive/responsive.dart';
 import 'package:recast_designs_test/features/auth/data/models/text_field_config.dart';
+import 'package:recast_designs_test/core/constants/app_dimensions.dart';
 
 import '../../data/seed/text_field_config_seed_data.dart';
 import 'auth_text_field.dart';
@@ -53,7 +54,7 @@ class SignUpFormState extends State<SignUpForm> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,
-      spacing: context.h(6),
+      spacing: context.h(AppDimensions.spacingSm),
       children: [
         ...authFormFieldSeedData.map(
           (config) => AuthTextField(

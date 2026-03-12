@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../core/constants/app_dimensions.dart';
 import '../../../../core/utils/responsive/responsive.dart';
 import '../../data/models/food_image.dart';
 import 'food_image_card.dart';
@@ -39,11 +40,13 @@ class _AnimatedFoodRowState extends State<AnimatedFoodRow> with SingleTickerProv
 
   @override
   Widget build(BuildContext context) {
-    final double itemWidth = context.w(90.0) + context.w(8.0); // card width + horizontal margin
+    final double itemWidth =
+        context.w(AppDimensions.foodCardWidth) +
+        context.w(AppDimensions.spacingMd); // card width + horizontal margin
     final listWidth = widget.images.length * itemWidth;
 
     return SizedBox(
-      height: context.h(121.0) + context.h(8.0),
+      height: context.h(AppDimensions.foodCardHeight) + context.h(AppDimensions.spacingMd),
       child: AnimatedBuilder(
         animation: _controller,
         builder: (context, child) {

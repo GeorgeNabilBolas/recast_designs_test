@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:recast_designs_test/core/theme/app_colors.dart';
 import 'package:recast_designs_test/core/theme/app_text_styles.dart';
 import 'package:recast_designs_test/core/utils/responsive/responsive.dart';
-import 'package:recast_designs_test/core/constants/app_dimensions.dart';
-import '../../data/models/text_field_config.dart';
+import '../../features/auth/data/models/text_field_config.dart';
 
 class AuthTextField extends StatefulWidget {
   const AuthTextField({
@@ -44,8 +43,8 @@ class _AuthTextFieldState extends State<AuthTextField> {
       style: const TextStyle(color: AppColors.white),
       decoration: InputDecoration(
         contentPadding: EdgeInsets.symmetric(
-          horizontal: context.w(AppDimensions.inputPaddingH),
-          vertical: context.h(AppDimensions.inputPaddingV),
+          horizontal: context.w(16.0),
+          vertical: context.h(12.0),
         ),
         labelText: widget.config.label,
         labelStyle: AppTextStyles.style14W700White,
@@ -67,7 +66,7 @@ class _AuthTextFieldState extends State<AuthTextField> {
     required Color color,
   }) {
     return OutlineInputBorder(
-      borderRadius: BorderRadius.circular(context.w(AppDimensions.radiusMd)),
+      borderRadius: BorderRadius.circular(context.w(12)),
       borderSide: BorderSide(color: color),
     );
   }
@@ -75,7 +74,7 @@ class _AuthTextFieldState extends State<AuthTextField> {
   IconButton _obscuredIcon(BuildContext context) {
     return IconButton(
       icon: Container(
-        padding: EdgeInsets.all(context.w(AppDimensions.iconPadding)),
+        padding: EdgeInsets.all(context.w(6)),
         decoration: BoxDecoration(
           color: AppColors.grey300.withValues(alpha: 0.1),
           shape: BoxShape.circle,

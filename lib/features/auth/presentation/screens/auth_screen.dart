@@ -5,6 +5,7 @@ import 'package:recast_designs_test/core/utils/responsive/responsive.dart';
 import 'package:recast_designs_test/features/auth/presentation/cubits/auth/auth_form_cubit.dart';
 import 'package:recast_designs_test/features/auth/presentation/cubits/auth/auth_form_state.dart';
 import 'package:recast_designs_test/features/auth/presentation/widgets/primary_button.dart';
+import 'package:recast_designs_test/core/constants/app_dimensions.dart';
 
 import '../sections/animated_food_section.dart';
 import '../sections/auth_bottom_section.dart';
@@ -56,13 +57,13 @@ class _AuthScreenBodyState extends State<_AuthScreenBody> {
         return Column(
           children: [
             const AnimatedFoodSection(),
-            SizedBox(height: context.h(16.0)),
+            SizedBox(height: context.h(AppDimensions.spacingLg)),
             Expanded(
               child: CustomScrollView(
                 slivers: [
                   SliverPadding(
                     padding: EdgeInsets.symmetric(
-                      horizontal: context.w(11),
+                      horizontal: context.w(AppDimensions.paddingHorizontal),
                     ),
                     sliver: SliverFillRemaining(
                       hasScrollBody: false,
@@ -82,7 +83,7 @@ class _AuthScreenBodyState extends State<_AuthScreenBody> {
                             ),
                             useGradient: !isSocialAuth,
                           ),
-                          SizedBox(height: context.h(6)),
+                          SizedBox(height: context.h(AppDimensions.spacingSm)),
                           AuthBottomSection(
                             isSocialAuth: isSocialAuth,
                             errorMessage: errorMessage,

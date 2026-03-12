@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import '../../../../core/utils/responsive/responsive.dart';
+import '../../../../core/constants/app_dimensions.dart';
 import '../../data/models/food_image.dart';
 
 class FoodImageCard extends StatelessWidget {
   const FoodImageCard({
     super.key,
     required this.foodImage,
-    this.width = 90,
-    this.height = 121,
+    this.width = AppDimensions.foodCardWidth,
+    this.height = AppDimensions.foodCardHeight,
   });
 
   final FoodImage foodImage;
@@ -25,9 +26,9 @@ class FoodImageCard extends StatelessWidget {
     return Container(
       width: responsiveWidth,
       height: responsiveHeight,
-      margin: EdgeInsets.symmetric(horizontal: context.w(4.0)),
+      margin: EdgeInsets.symmetric(horizontal: context.w(AppDimensions.spacingXs)),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(context.w(7)),
+        borderRadius: BorderRadius.circular(context.w(AppDimensions.radiusSm)),
         child: Image.asset(
           foodImage.imageUrl,
           fit: BoxFit.cover,
