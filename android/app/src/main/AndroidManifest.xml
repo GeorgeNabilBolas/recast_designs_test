@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="recast_designs_test"
+        android:label="OasisNow"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
         <activity

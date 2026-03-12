@@ -1,6 +1,6 @@
 {
-    "name": "recast_designs_test",
-    "short_name": "recast_designs_test",
+    "name": "OasisNow",
+    "short_name": "OasisNow",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
